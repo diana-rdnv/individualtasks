@@ -1,0 +1,312 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=divice-width, initial-scale=1.0">
+<title>Моя личная страница</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/media-queries.css">
+</head>
+
+<body>
+	
+	<style id="inverter" media="none">
+  html { background-color: #eee; filter: invert(100%) }
+  * { background-color: inherit }
+		
+  .item1, .item2, .item3 img:not([src*=".svg"]) { filter: invert(100%) }
+
+  #main:not([src*=".svg"]), [style*="url("] { filter: invert(100%)}
+		
+  .diana { color: white; filter: invert(100%) }
+  ** { color: inherit }
+		
+  .social img{color: black; filter: invert(100%) }
+  *** { color: inherit }
+		
+  .button { background-color: white; filter: invert(100%) }
+  **** { background-color: inherit }
+</style>
+	
+<!-- Главный экран -->
+				<a name="up"></a>
+				<div id="main">
+					<header>
+                    <input type="checkbox" name="menu" id="dws-menu">
+						<div class="log-menu">
+						<label for="dws-menu"><img src="img/menu.png"></label>
+						</div>
+				
+				<nav class="menu">
+					<div class="section-inner">
+					<ul>
+						<li>
+							<a href="#aboutme">Обо мне</a>
+                        </li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						
+						<li>
+							<a href="#table">Итоговые оценки</a>
+						</li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						
+						<li>
+							<a href="#top">Топ 5 фильмов</a>
+						</li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						
+						<li>
+							<a href="#city">Мой родной город</a>
+						</li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						
+						<li>
+						<a href="3dmodel.html" class="model">3D модель</a>
+						</li>
+					  </ul>
+				  </div>
+					</nav>	
+			</header>
+					
+				<div class="wrap">
+  <label class="button" for="themer">
+    <input type="checkbox" name="themer" id="themer">
+    Dark theme: <span aria-hidden="true"></span>
+  </label>
+		</div>
+		
+		<p class="diana">ДИАНА РУДНЕВА</p>
+
+		<p class="quote"><i><b>&laquo;Будь собой, остальные роли уже заняты.&raquo;</b></i></p><br>
+		<p class="author"><b>&copy; Оскар Уайльд</b></p>
+	</div>
+	<br><br>
+	
+	<div class="wrapper">
+			<a name="aboutme"><p align="center" class="heading">ОБО МНЕ</p></a>
+			<p class="aboutme">
+				<br>Меня зовут Диана Руднева, мне 20 лет.<br>
+Учусь на 2-ом курсе НТУ «ХПИ», по
+специальности «Геометрическое моделирование и 
+графические информационные технологии».
+В свободное от учёбы время занимаюсь
+редактированием фотографий, монтажом видео и немного рисую.<br><br>
+<b>Любимые игры:</b> The Sims 4; Life Is Strange; Life Is Strange 2; Fran Bow; Sally Face.<br><br>
+<b>Любимы исполнители:</b> MELOVIN; Billie Eilish; DAKOOKA.<br><br>
+<b>Любимые группы:</b> Fall Out Boy; Imagine Dragons; The Neighbourhood; Arctic Monkeys; Twenty One Pilots.<br><br>
+<b>Меня можно описать такими словами:</b> ответственная, терпеливая, добрая.</p>
+		
+	
+			<div class="slider1">
+    <div class="item1">
+	<img src="img/счастливое.jpg" alt="smile">
+		<div class="slideText1">счастье</div>
+	</div>
+		
+    <div class="item1">
+	<img src="img/грустное.jpg" alt="sad">
+		<div class="slideText1">грусть</div>
+		</div>
+		
+	<div class="item1">
+	<img src="img/текущее.jpg" alt="nast">
+		<div class="slideText1">интерес</div>
+    </div>
+				
+	<a class="prev1" onclick="minusSlide1()">&#10094;</a>
+    <a class="next1" onclick="plusSlide1()">&#10095;</a>
+	<br>
+				
+<div class="slider-dots1">
+    <span class="slider-dots_item1" onclick="currentSlide(1)"></span> 
+    <span class="slider-dots_item1" onclick="currentSlide(2)"></span> 
+    <span class="slider-dots_item1" onclick="currentSlide(3)"></span> 
+</div>
+</div>
+		<br><br>	<br><br>
+		
+		<a name="table"><p class="heading" align="center">ИТОГОВЫЕ ОЦЕНКИ</p></a><br><br>
+		<table cellspacing="0" cellpadding="3" align="center">
+	<thead>
+    <tr>
+      <th scope="col" width="270">Предмет</th>
+      <th scope="col" width="200">Преподаватель</th>
+      <th scope="col" width="40">нац.шкала</th>
+      <th scope="col" width="40">кол-во баллов</th>
+      <th scope="col" width="10">ECTS</th>
+    </tr>
+    </thead>
+			
+	<tbody align="center">
+    <tr>
+      <td data-label="Предмет">Основи графической композиции</td>
+      <td data-label="Преподаватель">Глибко</td>
+      <td data-label="нац.шкала">хорошо</td>
+      <td data-label="кол-во баллов">85</td>
+      <td data-label="ECTS">B</td>
+    </tr>
+    <tr>
+      <td data-label="Предмет">Архитектура Вычислительных Систем</td>
+      <td data-label="Преподаватель">Ломакин</td>
+      <td data-label="нац.шкала">удовлет.</td>
+      <td data-label="кол-во баллов">60</td>
+      <td data-label="ECTS">E</td>
+    </tr>
+    <tr>
+      <td data-label="Предмет">Дискретная математика</td>
+      <td data-label="Преподаватель">Татаринова</td>
+      <td data-label="нац.шкала">хорошо</td>
+      <td data-label="кол-во баллов">75</td>
+      <td data-label="ECTS">C</td>
+    </tr>
+    <tr>
+      <td data-label="Предмет">Начертательная геометрия</td>
+      <td data-label="Преподаватель">Федченко</td>
+      <td data-label="нац.шкала">хорошо</td>
+      <td data-label="кол-во баллов">78</td>
+      <td data-label="ECTS">C</td>
+    </tr>
+    <tr>
+      <td data-label="Предмет">Английский язык</td>
+      <td data-label="Преподаватель">Вракина</td>
+      <td data-label="нац.шкала">хорошо</td>
+      <td data-label="кол-во баллов">82</td>
+      <td data-label="ECTS">B</td>
+    </tr>
+    <tr>
+      <td data-label="Предмет">Физическое воспитание</td>
+      <td data-label="Преподаватель">Плужникова</td>
+      <td data-label="нац.шкала">хорошо</td>
+      <td data-label="кол-во баллов">80</td>
+      <td data-label="ECTS">C</td>
+    </tr>
+    <tr>
+      <td data-label="Предмет">Правоведение</td>
+      <td data-label="Преподаватель">Семко</td>
+      <td data-label="нац.шкала">отлично</td>
+      <td data-label="кол-во баллов">93</td>
+      <td data-label="ECTS">A</td>
+    </tr>
+    <tr>
+      <td data-label="Предмет">Объектно-ориентированное программирование</td>
+      <td data-label="Преподаватель">Водка</td>
+      <td data-label="нац.шкала">хорошо</td>
+      <td data-label="кол-во баллов">75</td>
+      <td data-label="ECTS">C</td>
+    </tr>
+  </tbody>
+</table>
+	
+	<a name="top"><p class="heading" align="center">ТОП 5 ФИЛЬМОВ</p></a><br>
+	
+	<div class="slider2">
+        <div class="item2">
+        <img src="img/чудо.jpg" alt="Первый слайд">
+    </div>
+
+        <div class="item2">
+        <img src="img/мальчик в.jpg" alt="Второй слайд">
+    </div>
+
+        <div class="item2">
+        <img src="img/Теория всего.jpg" alt="Третий слайд">
+    </div>
+	  
+		 <div class="item2">
+        <img src="img/несломленный.jpg" alt="Четвёртый слайд">
+	</div>
+	  
+		<div class="item2">
+        <img src="img/комната.jpg" alt="Пятый слайд">
+    </div>
+
+    <a class="prev2" onclick="minusSlide2()">&#10094;</a>
+    <a class="next2" onclick="plusSlide2()">&#10095;</a>
+<br>
+		
+<div class="slider-dots2">
+    <span class="slider-dots_item2" onclick="currentSlide(1)"></span> 
+    <span class="slider-dots_item2" onclick="currentSlide(2)"></span> 
+    <span class="slider-dots_item2" onclick="currentSlide(3)"></span> 
+	<span class="slider-dots_item2" onclick="currentSlide(4)"></span>
+	<span class="slider-dots_item2" onclick="currentSlide(5)"></span>
+</div>
+	</div>
+	
+<div class="top">
+		<ol type="1">
+			<a href="https://ru.wikipedia.org/wiki/%D0%A7%D1%83%D0%B4%D0%BE_(%D1%84%D0%B8%D0%BB%D1%8C%D0%BC,_2017)"><li>Чудо</li></a><br>
+			<p class="films">«Чудо» (англ. Wonder) — американская семейная драма режиссёра Стивена Чбоски, основанная на одноимённом романе Р. Х. Паласио.</p><br>
+		    <a href="https://ru.wikipedia.org/wiki/%D0%9C%D0%B0%D0%BB%D1%8C%D1%87%D0%B8%D0%BA_%D0%B2_%D0%BF%D0%BE%D0%BB%D0%BE%D1%81%D0%B0%D1%82%D0%BE%D0%B9_%D0%BF%D0%B8%D0%B6%D0%B0%D0%BC%D0%B5_(%D1%84%D0%B8%D0%BB%D1%8C%D0%BC)"><li>Мальчик в полосатой пижаме</li></a><br>
+			<p class="films">«Мальчик в полосатой пижаме» (англ. The Boy in the Striped Pyjamas) — исторический художественный фильм режиссёра Марка Хермана, снятый по одноимённому роману Джона Бойна.</p><br>
+			<a href="https://ru.wikipedia.org/wiki/%D0%92%D1%81%D0%B5%D0%BB%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F_%D0%A1%D1%82%D0%B8%D0%B2%D0%B5%D0%BD%D0%B0_%D0%A5%D0%BE%D0%BA%D0%B8%D0%BD%D0%B3%D0%B0"><li>Вселенная Стивена Хокинга</li></a><br>
+			<p class="films">«Вселе́нная Сти́вена Хо́кинга» (англ. The Theory of Everything, дословно — «Тео́рия всего́») — мелодраматический фильм режиссёра Джеймса Марша. Основан на мемуарах Джейн Хокинг.</p><br>
+			<a href="https://ru.wikipedia.org/wiki/%D0%9D%D0%B5%D1%81%D0%BB%D0%BE%D0%BC%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9_(%D1%84%D0%B8%D0%BB%D1%8C%D0%BC)"><li>Несломленный</li></a><br>
+			<p class="films">«Несло́мленный» (англ. Unbroken) — американская военная драма режиссёра Анджелины Джоли. Действие основано на реальных событиях, произошедших с олимпийским призёром и спортсменом Луи Замперини.</p><br>
+			<a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BC%D0%BD%D0%B0%D1%82%D0%B0_(%D1%84%D0%B8%D0%BB%D1%8C%D0%BC,_2015)"><li>Комната</li>
+			</a><br>
+			<p class="films">«Комната» (англ. Room) — драматический фильм режиссёра Ленни Абрахамсона, экранизация одноимённого романа Эммы Донохью.</p>
+		</ol>
+	</div>
+
+		<div id="city">
+		<a name="city"><p class="heading" align="center">МОЙ РОДНОЙ ГОРОД</p></a></div><br><br>
+		<p class="city">Как бы ни была интересна история Чугуева и истории
+        людей живших и работавших здесь, самым знаменитым 
+        чугуевцем навсегда останется художник-реалист Илья 
+        Ефимович Репин. В городе прошли его детские годы и юность.
+<br>
+        Сейчас в Чугуеве многое напоминает о художнике — 
+        памятная стела на месте где стоял дом бабушки, в котором 
+        родился живописец. Усадьба, принадлежавшая родителям. 
+        Торговые ряды, где в магазине Павлова Илья Репин, будучи 
+        ребенком, продавал свои первые художественные работы — 
+        пасхальные писанки. Памятник художнику, муралы с репродукциями 
+        его работ. Познакомиться подробнее с биографией и творчеством 
+        Ильи Репина можно также посетив Художественно-мемориальный
+        музей И. Е. Репина в Чугуеве.</p>
+	
+	<div class="slider3">
+        <div class="item3">
+        <img src="img/1.jpeg" alt="Первый слайд">
+    </div>
+
+        <div class="item3">
+        <img src="img/2.jpeg" alt="Второй слайд">
+    </div>
+
+        <div class="item3">
+        <img src="img/3.jpeg" alt="Третий слайд">
+    </div>
+	  
+		 <div class="item3">
+        <img src="img/4.jpeg" alt="Четвёртый слайд">
+	</div>
+	  
+		<div class="item3">
+        <img src="img/5.jpeg" alt="Пятый слайд">
+    </div>
+
+    <a class="prev3" onclick="minusSlide3()">&#10094;</a>
+    <a class="next3" onclick="plusSlide3()">&#10095;</a>
+	<br>
+			
+<div class="slider-dots3">
+    <span class="slider-dots_item3" onclick="currentSlide(1)"></span> 
+    <span class="slider-dots_item3" onclick="currentSlide(2)"></span> 
+    <span class="slider-dots_item3" onclick="currentSlide(3)"></span> 
+	<span class="slider-dots_item3" onclick="currentSlide(4)"></span>
+	<span class="slider-dots_item3" onclick="currentSlide(5)"></span>
+</div>
+	</div>
+	</div>
+	
+	<a href="#up" class="up" title="Наверх" alt="Наверх" style="text-decoration: none;"><img src="img/up.png" alt="up" class="icon icon-House"></a>
+	<div class="clear"></div>
+	<footer style="color: font-weight: lighter;line-height: 2em;">
+		<a href="mailto:rudnevadiana91@gmail.com"><img src="img/gmail.png" alt="message" class="social"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="https://www.instagram.com/diana_rdnv/?hl=ru"><img src="img/instagram.png" alt="insta" class="social"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="https://t.me/diana_rdnv"><img src="img/telegram.png" alt="telega" class="social"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="https://vk.com/diana_rudneva"><img src="img/vk.png" alt="vk" class="social"></a>
+		</footer>
+	
+<script type="text/javascript" src="js/sliders&themer.js"></script>
+
+	</body>
+</html>

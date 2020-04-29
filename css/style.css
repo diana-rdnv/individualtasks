@@ -1,0 +1,341 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+     margin: 0;
+     color: inherit; 
+}
+
+.clear {
+	clear: both;
+}
+body {
+	 color: #222;
+	 font-family: Arial;
+	 padding: 0; 
+	 margin: 0;
+}
+
+#main{
+	color: white;
+	height: 730px;
+	max-width: 100%;
+	background: url("../img/главная.jpg") no-repeat center top /cover;
+}
+
+#dws-menu,
+header label {
+	display: none;
+}
+header {
+	display: inline-block;
+}
+.menu {
+	 height: auto;
+	 width: auto;
+     display: inline;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	 margin-top: 30px;
+	 margin-left: 30px;
+	 font-size: 15px;
+}
+
+.menu ul {
+ list-style: none;
+ display: flex;
+}
+
+.menu li a {
+ display: inline-block;
+}
+.menu a:link {color: white;}
+.menu a:hover { color: #D68D09;}
+.menu a:visited {color: #D689DC;}
+
+a {text-decoration: none;}
+
+.top a:link { color:  black;}
+.top a:hover { color: #2F88B9;}
+.top a:visited {color: white;}
+
+.wrap {
+     margin-left: 1300px;
+}
+
+/* кнопка для переключения темы */
+.button {
+  font-size: 15px;
+  background: #fff;
+  padding: 0.3rem 1.0rem;
+  color: #000;
+  border-radius: 0.25rem;
+}
+
+.button [type="checkbox"] {
+  position: absolute;
+  left: -9999px;
+}
+
+.button [type="checkbox"] + span::before {
+  content: 'off';
+}
+
+.button [type="checkbox"]:checked + span::before {
+  content: 'on';
+}
+
+.diana{
+	opacity: 0.7;
+	margin-left: 200px;
+	margin-top: 190px;
+	font-size: 70px;
+}
+
+.heading {
+	 font-weight: bold;
+	 height: 36px;
+	 margin-bottom: 20px;
+	 font-size: 32px;
+	 letter-spacing: 0.2em;
+}
+
+.quote{
+	font-size: 19px;
+	margin-top: 310px;
+	margin-left: 800px;
+}
+
+.author{
+	font-size: 16px;
+	margin-left: 1100px;
+}
+
+.wrapper {
+    width: 65%;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+.aboutme {
+	display:inline-block;
+	font-size: 16px;
+	line-height: 1.5em;
+	width: 650px;
+	height: 380px;
+}
+
+table {
+	width: 100%;
+	margin-bottom: 60px;
+	border-collapse: collapse;
+}
+table th,
+table td {
+	border: 2px solid #111111;
+}
+table td {
+	position: relative;
+}
+table th {
+	color: white;
+	background-color: #222;
+}
+.top{
+	font-size: 18px;
+	float: right;
+	width: 600px;
+	height: 590px;
+}
+
+.films {
+	font-size: 15px;
+}
+#city {
+	margin-top: 590px;
+	display: block;
+}
+.city{
+	display:inline-block;
+	font-size: 17px;
+	text-indent: 20px;
+	line-height: 1.5em;
+	height: 370px;
+	width: 470px;
+}
+
+/* слайдер */
+.slider1 {
+	float: right;
+	width: 300px;
+    height: 380px;
+	}
+
+.slider2{
+	float: left;
+	width: 340px;
+    height: 480px; 
+}
+
+.slider3{
+	float: right;
+	width: 480px;
+    height: 370px;  
+}
+
+.slider1, .slider2, .slider3{
+    position: relative;
+}
+
+/* Картинка мастабируется по отношению к родительскому элементу */
+
+.slider1 .item1 img {
+	height: 380px;
+}
+
+.slider2 .item2 img {
+    height: 480px;
+}
+
+.slider3 .item3 img {
+    height: 370px;
+}
+
+.slider1 .item1 img, .slider2 .item2 img, .slider3 .item3 img {
+	width: 100%;
+    object-fit: cover;
+    border: none !important;
+}
+
+/* Кнопки вперед и назад */
+.slider1 .prev1, .slider1 .next1,
+.slider2 .prev2, .slider2 .next2,
+.slider3 .prev3, .slider3 .next3{
+	background: none;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+.slider1 .next1,
+.slider2 .next2,
+.slider3 .next3{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* Заголовок слайда */
+.slideText1 {
+	background: none;
+    position: absolute;
+    color: #fff;
+    font-size: 25px;
+    /* Выравнивание текста по горизонтали и по вертикали*/
+    left: 50%;
+    top: 7%;
+    transform: translate(-50%, -50%);
+    /* Тень*/
+    text-shadow: 1px 1px 1px #000, 0 0 1em #000;
+}
+
+/* Кружочки */
+.slider-dots1,
+.slider-dots2,
+.slider-dots3{
+    text-align: center;
+}
+.slider-dots_item1,
+.slider-dots_item2,
+.slider-dots_item3{
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    margin: 0 2px;
+    background-color: #ddd;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active1,
+.slider-dots_item1:hover,
+.active2,
+.slider-dots_item2:hover,
+.active3,
+.slider-dots_item3:hover
+{
+    background-color: #aaa;
+}
+/* При наведении на кнопки добавляем фон кнопок */
+.slider1 .prev1:hover,
+.slider1 .next1:hover,
+.slider2 .prev2:hover,
+.slider2 .next2:hover,
+.slider3 .prev3:hover,
+.slider3 .next3:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Анимация слайдов */
+.slider1 .item1, .slider2 .item2, .slider3 .item3 {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+.icon-House {
+	width: 40px;
+	height: 40px;
+}
+/*Стиль для стрелки-ссылки вверх*/
+.up { 
+   background: none;
+   color:#000;
+   position:fixed;
+   bottom:20px; 
+   left: 40px;
+   font-size:40px;
+}
+
+footer {
+	display: block;
+	max-width: 1920px;
+	margin: 0 auto;
+	margin-top: 50px;;
+	padding: 30px 0px;
+	font-size: 14px;
+	text-align: center;
+	background-color: #f7f7f7;
+}
+
+.social {
+	width: 30px;
+	height: 30px;
+	color: black;
+	background: none;
+}

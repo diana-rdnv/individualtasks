@@ -1,0 +1,158 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+			font-family: Arial;
+			background-color: antiquewhite;
+		}
+		.butterfly {
+			display: block;
+			font-weight: bold;
+			font-size: 32px;
+	        letter-spacing: 0.2em;
+		}
+.d {
+	position:relative;
+	overflow:hidden;
+}
+#PreviewFrame3D{
+			display: inline-block;
+			float: left;
+			width: 400px; 
+			height: 400px;	
+		}
+		
+		a:link {color: blue;}
+        a:hover { color: #D68D09;}
+        a:visited {color: #D689DC;}
+		
+		a {
+			display: block;
+			margin-top: 20px;
+			float: left;
+		}
+		.specification {
+			font-size: 16px;
+		}
+		.spec {
+			display: block;
+			margin-top: 510px;
+			width: 400px;
+			height: 20px;
+		}
+		.model {
+			width: 73%;
+			float: right;
+		}
+
+@media only screen and (max-width: 1510px) {
+	.model {
+		width: 72%;
+	}
+}
+@media only screen and (max-width: 1440px) {
+	.model {
+		width: 71%;
+		font-size: 14px;
+	}
+	.spec {
+		margin-top: 490px;
+	}
+}
+@media only screen and (max-width: 1366px) {
+	.model {
+		width: 69%;
+	}
+	.specification {
+		font-size: 15px;
+		}
+}
+@media only screen and (max-width: 1280px) {
+	.model {
+		width: 67%;
+	}
+}
+@media only screen and (max-width: 1024px) {
+	#PreviewFrame3D {
+		width: 380px;
+	}
+	.model {
+		width: 60%;
+	}
+}
+@media only screen and (max-width: 992px) {
+	#PreviewFrame3D {
+		width: 400px;
+	}
+	.model {
+		width: 58%;
+	}
+}
+@media only screen and (max-width: 768px) {
+	#PreviewFrame3D {
+		margin-left: 17%;
+		width: 500px;
+	}
+	.model {
+		width: 73%;
+	}
+}
+@media only screen and (max-width: 480px) {
+	#PreviewFrame3D {
+		margin-left: 7%;
+		width: 400px;
+		height: 380px;
+	}
+	.model {
+	    font-size: 14px;
+		width: 65%;
+	}
+	.specification {
+		font-size: 13px;
+	}
+}
+/*
+@media only screen and (max-width: 425px) {
+	#PreviewFrame3D {
+		margin-left: 3%;
+		width: 300px;
+	}
+	.model {
+	    font-size: 13px;
+		width: 59%;
+	}
+	.specification {
+		font-size: 12px;
+	}
+}
+*/
+@media only screen and (max-width: 380px) {
+	#PreviewFrame3D {
+		width: 350px;
+		margin-left: 5%;
+	}
+	.model {
+		width: 66%;
+	}
+}
+@media only screen and (max-width: 360px) {
+	#PreviewFrame3D {
+		width: 340px;
+		margin-left: 7%;
+	}
+	.model {
+		width: 55%;
+	}
+}
+@media only screen and (max-width: 320px) {
+	.butterfly {
+		margin-left: 80px;
+	}
+	#PreviewFrame3D {
+		width: 350px;
+		margin-left: 6%;
+	}
+	.model {
+		width: 50%;
+	}
+}
